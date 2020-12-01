@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>topgirl</title>
+        <link rel="stylesheet" href="main1.css">
+    </head>
+    <body> 
+<script>
+            function get_browser_name(){
+                var ua=navigator.userAgent;
+                if(ua.search(/Chrome/)>0) return 'Google Chrome';
+                if(ua.search(/Firefox/)>0) return 'Firefox';
+                if(ua.search(/Opera/)>0) return 'Opera';
+                if(ua.search(/Safari/)>0) return 'Safari';
+                if(ua.search(/MSIE/)>0) return 'Interner Explorer';
+                return 'Не определен';
+            }
+            var browser=get_browser_name();
+            document.write('Имя вашего браузера - '+browser);
+    
+    window.alert(2);
+    var polina = confirm("Полина хорошая?");
+    alert(polina);
+    var name=prompt('Ваше имя?', );
+    alert('Ваше '+'имя '+name);
+    var myWindow=window.open('https://www.google.com', 'new', 'width=400,height=300,toolbar=1');
+    myWindow.focus();
+    var timeoutID;
+    function delayedAlert(){
+        timeoutID=window.setTimeout(slowAlert, 8000);
+    }
+    function slowAlert(){
+        alert('Медленно!');
+    }
+    function clearAlert(){
+        window.clearTimeout(timeoutID);
+    }
+            </script>
+    </body>
+</html>
